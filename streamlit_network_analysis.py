@@ -146,7 +146,7 @@ if uploaded_file is not None:
         
         
         if len(uniq_community) > 0:
-            select_community = st.multiselect('Select community to visualize', uniq_community,[15,5])
+            select_community = st.multiselect('Select community to visualize', uniq_community)
             
             if len(select_community)==0:
                 st.text('Choose at least 1 community to start')
