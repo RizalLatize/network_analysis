@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+pandasql
+networkx
+pyvis
+python-louvain
+random
