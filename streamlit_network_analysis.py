@@ -42,7 +42,7 @@ if uploaded_file is not None:
     
     
     #df['weight']=1
-    labels = ['friend','rival']#,'acquaintance','best_friend']
+    labels = ['friend','rival','acquaintance']#,'best_friend']
     df['label'] = random.choices(labels,weights=None,k=len(df))
     weight = [2,4,8,16,32]
     df['weight'] = random.choices(weight,weights=None,k=len(df))
