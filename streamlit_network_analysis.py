@@ -58,7 +58,7 @@ if authenticate_user():
 #=============================== END ZY ============================================================
 
   # Set header title
-  st.title('Network Graph')
+  st.title('Social Network Graph')
   
   uploaded_file = st.file_uploader("Choose a CSV file")#, accept_multiple_files=True)
   
