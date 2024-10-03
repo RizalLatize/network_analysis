@@ -26,7 +26,7 @@ random.seed(10)
 
 
 
-#===================================== FOR ZONG YI =============================================
+#===================================== FOR ZY =============================================
 st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None)
 
 def authenticate_user():
@@ -55,7 +55,7 @@ def creds_entered():
             st.error('Invalid Username/Password!')
 
 if authenticate_user():
-#=============================== END FOR ZONG YI ============================================================
+#=============================== END ZY ============================================================
 
   # Set header title
   st.title('Network Graph')
