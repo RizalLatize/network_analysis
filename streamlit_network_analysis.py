@@ -122,7 +122,7 @@ if uploaded_file is not None:
                             a.`from`
                             ,a.`to`
                             ,a.label
-                            --,a.weight
+                            ,a.weight
                             ,b.community
                             FROM df_select a
                             LEFT JOIN communities_df b
