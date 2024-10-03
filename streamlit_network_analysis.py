@@ -25,9 +25,10 @@ import random
 random.seed(10)
 
 
-st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None)
 
-        
+#===================================== FOR ZONG YI =============================================
+st.set_page_config(Layout="wide")
+
 def authenticate_user():
     if 'authenticated' not in st.session_state:
         st.text_input(label='Username:',value='',key='user',on_change=creds_entered)
@@ -39,9 +40,7 @@ def authenticate_user():
         else:
             st.text_input(label='Username:',value='',key='user',on_change=creds_entered)
             st.text_input(label='Password:',value='',key='passwd',type='password',on_change=creds_entered)
-            return False
-            
-        
+            return False    
 
 def creds_entered():
     if st.session_state['user'].strip()=='aml_analyst' and st.session_state['passwd'].strip()=='aml321':
@@ -54,11 +53,9 @@ def creds_entered():
             st.warning('Please enter username.')
         else:
             st.error('Invalid Username/Password!')
-        
-
 
 if authenticate_user():
-
+#=============================== END FOR ZONG YI ============================================================
 
   # Set header title
   st.title('Network Graph')
